@@ -1,4 +1,4 @@
-let song;
+var song;
 
 let video;
 
@@ -27,6 +27,9 @@ let M5;
 
 let M6;
 
+function preload(){
+  song = loadSound('assets/i_need_you_peggy_gou_remix.mp3');
+}
 
 function setup() {
   
@@ -47,7 +50,7 @@ function setup() {
     bugs.push(new Jitter());
   }
   
-  song = loadSound('assets/i_need_you_peggy_gou_remix.mp3');
+  
   song.play();
   
 }
